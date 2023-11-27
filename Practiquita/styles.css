@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin:0;
+  
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-shadow: 0 2px#816fca;
+}
+
+.beta-text { 
+    font-weight: 900;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+}
+
+.beta-text,
+.top-text,
+.subheading{
+    text-transform: uppercase;
+}
+
+.top-text{
+    margin: 0 auto;
+    font-size:0.875rem;
+    font-weight:900;
+    padding-top:0.25em;
+    border-top: 5px solid;
+    order:-1;
+  
+  
+}
+.fine-print{
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color:#858585;
+}
+input{
+    font-family:inherit;
+    width:100%;
+    padding:0.5em;
+    margin-bottom: 0.75em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+
+}
+input:focus{
+    outline:none;
+    border: 2px solid #8a71ec;
+    background-color: #e6e8ec;
+}
+.btn{
+    padding:1em 0;
+    border:none;
+    letter-spacing: 1px;
+    font-family:inherit;
+    width:100%;
+    background-color: #8a71ec;
+    color:white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.btn:hover,
+.btn:focus{
+    background-color: #b7a7f6;
+}
+/* =================
+    Intro
+   ================= */
+   
+.intro { 
+    color: #fff;
+    background-color: #9480e4;
+    display:flex;
+    flex-direction: column;
+    min-height: 250px;
+    text-align: center;
+    justify-content: space-around;
+    background-image:url("images/intro-bg.png");
+    background-size: cover;
+}
+
+/* ====================
+    Main content
+   ==================== */
+   .main-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5em;
+    
+   }
+   
+   .img-main{
+    width:120px;
+    border-radius: 50%;
+   }
+
+   .main-content p,
+   form{
+    max-width:450px;
+   }
+
+  
+/* =================
+    Form
+   ================= */
+   
+
+/* =================
+    Media queries 
+   ================= */
+   @media(min-width:576px){
+    body{
+        display: flex;
+        min-height: 100vh;
+       
+    }
+    h1{
+        font-size: 5vw;
+    }
+
+    h2{
+        font-size:2.625rem;
+    }
+    .beta-text{
+        font-size: 1.25rem;
+    }
+    .intro,
+    .main-content{
+        width:50%;
+        padding-left: 2em;
+        padding-right:2em;
+    }
+    }
+    .main-content{
+        justify-content: center;
+        padding-top: 0;
+        
+   }
